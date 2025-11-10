@@ -1,32 +1,316 @@
-name: Build and Publish Docker Image
+REDNO ✞
+rednoo
+Invisible
+
+ƝɑեհƑմղƳƬƁ — 03/11/2025 10:02
+11h30-12h30 ?
+REDNO ✞
+
+ — 03/11/2025 10:12
+ok
+ƝɑեհƑմղƳƬƁ — 03/11/2025 11:34
+Configurer le budget
+Donne un nom au budget (ex : « BudgetEtudiant5USD »).
+
+Choisis « Montant » (Amount) à 5 $.
+
+Période : sélectionne « Mensuel » (Monthly).
+
+Date de départ : aujourd’hui ou le début de ton cycle de dépenses.
+
+Décoche « Reset budget amount » s'il n'est pas pertinent pour ton cas.
+
+Créer les alertes (prévisionnelle et réelle)
+Section « Alert conditions » (Conditions d’alerte) :
+
+Clique sur « Add alert » (Ajouter une alerte).
+
+Pour la première alerte :
+
+Type : « Forecasted »
+
+Threshold : 100%
+
+Alert recipients : ajoute ton email, puis « b.vanhamme@helmo.be
+ » et « c.soldani@helmo.be
+ » séparés par des points-virgules ou des virgules.
+ƝɑեհƑմղƳƬƁ — 03/11/2025 11:43
+Ajouter l’alerte sur les dépenses prévues (forecasted)
+Clique sur « Ajouter une alerte » ou “Add alert”.
+
+Sélectionne :
+
+Type d’alerte : “Prévues” (“Forecasted”)
+
+Seuil : 100% (pour 5$ sur un budget à 5$)
+
+Receveur de l’alerte : ajoute ton adresse email, puis “b.vanhamme@helmo.be
+” et “c.soldani@helmo.be
+”
+
+Sauvegarde ou ajoute cette alerte.
+
+Ajouter l’alerte sur les dépenses réelles (actual)
+Clique à nouveau sur « Ajouter une alerte ».
+
+Sélectionne :
+
+Type d’alerte : “Effectives” (“Actual”)
+
+Seuil : 100% (pour 5$ sur un budget à 5$)
+
+Receveur de l’alerte : mêmes adresses email que précédemment
+ƝɑեհƑմղƳƬƁ — 07/11/2025 16:01
+Transféré
+Après plusieurs essai, qui échouait. J'ai du mettre la région de la VM en France Central voir photo
+
+Linux SandboxHost-638980410900135638 6.1.91.1-microsoft-standard #1 SMP Thu May 23 01:39:29 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux
+
+uname-a
+Image
+Transféré
+QUESTION 7
+1) Se connecter en ssh : ssh -i "C:\Users\natha\Downloads\lab04-vm_key.pem" azureuser@98.66.139.72
+
+2) Installer apache : sudo apt install apache2 -y
+
+3) Activer et start apache : sudo systemctl enable apache2, sudo systemctl start apache2
+
+4) Aller sur google et taper : http://98.66.139.72/
+
+5) Commande sur Terminal Windows : curl.exe -I http://98.66.139.72/
+
+voir photo
+Transféré
+QUESTION 8
+1) faire une copie du fichier : sudo cp /etc/apache2/conf-available/security.conf /etc/apache2/conf-available/security.conf.orig
+
+2) Modifier le fichier : sudo nano /etc/apache2/conf-available/security.conf
+
+3) Mettre ServerTokens : Os -> Prod, ServerSignature : On -> Off
+
+4) utiliser la commande diff : diff /etc/apache2/conf-available/security.conf.orig /etc/apache2/conf-available/security.conf
+
+Diff
+
+5) recharger : sudo systemctl reload apache2
+
+6) curl.exe -I http://98.66.139.72/ voir photo
+Transféré
+QUESTION 9 
+1) Supprimer le groupe de ressources : photo
+
+2) Recharger la page pour vérifier qu'il n'y a plus aucun groupe : photo
+
+3) Verifier dans l'onglet machine virtuelle qu'il y en n'ai plus : photo
+
+4)Verifier dans l'onglet ip publique qu'il y en n'ai plus : photo
+
+5)Verifier dans l'onglet disque qu'il y en n'ai plus : photo
+
+6)Verifier dans l'onglet reseau qu'il y en n'ai plus : photo
+
+4) Faire une commande bash : az resource list --resource-group Lab04 photo
+
+5) Verifier les facture dans l onglet facture : photo
+Transféré
+Image
+Transféré
+ca il me reste a faire mais c le json et faut juste le dl on peut le modif apres avec l ip
+Transféré
+Image
+Transféré
+et ca pas fait non plus
+Labo cloud
+REDNO ✞
+
+ — 07/11/2025 16:04
+merci gros bg
+ƝɑեհƑմղƳƬƁ — 07/11/2025 16:04
+De rien bebou
+Si ta fais la question 4 j’veux bien j ai rien compris
+Il me reste le ssh mais faut l ip de l école et jsp c quoi
+REDNO ✞
+
+ — 07/11/2025 16:05
+va pas au prochain labo python ils font la correction interro et labo 3 (qu on a fini depuiiiis )
+ƝɑեհƑմղƳƬƁ — 07/11/2025 16:05
+Bahhh schuschu l’a sûrement fait
+Fin jsp
+REDNO ✞
+
+ — 07/11/2025 16:06
+donc qst 6 t as pas fait ?
+ƝɑեհƑմղƳƬƁ — 07/11/2025 16:06
+Ici il avait 1h de retard et ct la fin du labo3
+REDNO ✞
+
+ — 07/11/2025 16:06
+Transféré
+Type de fichier joint : acrobat
+4. Cloud _ relecture de tentative (page 1 sur 2) _ Technique.pdf
+1.49 MB
+ƝɑեհƑմղƳƬƁ — 07/11/2025 16:06
+Avec json non faut l ip de l école 
+J ai télécharger le json et je le modifierais
+REDNO ✞
+
+ — 07/11/2025 16:07
+ok
+tu fais ca ou les commande curl etc ?
+j comprend rien du tt a ce labo
+y a moy on s appel en vitesse vers 20h ?
+ƝɑեհƑմղƳƬƁ — 07/11/2025 16:30
+jserais au resto xD
+sinon apres le resto jsp si tu sors
+REDNO ✞
+
+ — 07/11/2025 17:02
+oui le soir on peut call
+sinon dimanche
+on etait chaud faire un call a 3 avec louis
+ƝɑեհƑմղƳƬƁ — 07/11/2025 17:11
+si vous voulez il est fini mais jpeux vous expliquer comment j ai fais
+mtn jsuis pas sur c juste xD
+REDNO ✞
+
+ — 07/11/2025 17:14
+oklm
+on fait ca ajd soir ou dimanche soir ?
+ƝɑեհƑմղƳƬƁ — 07/11/2025 17:19
+comme vous préferez mtn jsp a quel heure je rentre ce soir j espere max 21h mdr
+REDNO ✞
+
+ — 07/11/2025 17:20
+ok
+on se dit quoi au pire on va speed run ca
+ƝɑեհƑմղƳƬƁ — 07/11/2025 17:20
+ok
+ui ca va vite
+REDNO ✞
+
+ — 07/11/2025 17:20
+bon au pire ce sera plus simple pr tt le monde dimanche
+ƝɑեհƑմղƳƬƁ — 07/11/2025 17:20
+faut juste savoir quoi faire mdrrr
+moi ca ma pris 2h xD
+REDNO ✞
+
+ — 07/11/2025 17:20
+comme ca tu prends ton temps au resto
+et moi aussi
+ƝɑեհƑմղƳƬƁ — 07/11/2025 17:20
+jveux pas prendre mon temps au resto xD
+jveux pas y aller mdrrrr
+REDNO ✞
+
+ — 07/11/2025 17:21
+mdr
+REDNO ✞
+
+ — 17:29
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+
+# GitHub recommends pinning actions to a commit SHA.
+Afficher plus
+message.txt
+3 Ko
+REDNO ✞
+ a commencé un appel. — 17:32
+ƝɑեհƑմղƳƬƁ — 17:43
+name: Publish Docker image
 
 on:
   push:
-    branches: ["main"]
+    branches:
+      
+main
 
 jobs:
-  build:
+  push_to_registries:
     runs-on: ubuntu-latest
-
     permissions:
-      contents: read
       packages: write
+      contents: read
+
+    steps:
+      
+name: Checkout repository
+      uses: actions/checkout@v5
+
+      
+name: Log in to GitHub Container Registry
+      uses: docker/login-action@v2
+      with:
+        registry: ghcr.io
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }}
+
+      
+name: Extract metadata for Docker
+      id: meta
+      uses: docker/metadata-action@v4
+      with:
+        images: ghcr.io/${{ github.repository }}
+
+      
+name: Build and push Docker image
+      uses: docker/build-push-action@v4
+      with:
+        context: .
+        push: true
+        tags: ${{ steps.meta.outputs.tags }}
+        labels: ${{ steps.meta.outputs.labels }}
+name: Publish Docker image
+
+on:
+  push:
+    branches:
+      - main
+Afficher plus
+message.txt
+1 Ko
+﻿
+name: Publish Docker image
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push_to_registries:
+    runs-on: ubuntu-latest
+    permissions:
+      packages: write
+      contents: read
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v3
+        uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build Docker image
-        run: |
-          docker build -t ghcr.io/${{ github.repository_owner }}/ue19-lab-05:latest .
+      - name: Extract metadata for Docker
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: ghcr.io/${{ github.repository }}
 
-      - name: Push Docker image
-        run: |
-          docker push ghcr.io/${{ github.repository_owner }}/ue19-lab-05:latest
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+message.txt
+1 Ko
